@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+  --black-color: #272727;
+  --bg-color: #f2f5f8;
+
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black-color);
+  background-color: var(--bg-color);
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn{
+  width: 195px;
+  height: 54px;
+  border-radius: 20px;
+  color: #fff;
+  background-image: linear-gradient(115.11deg, #912caa 16.38%, #c74da0 84.56%);
+  border-radius: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2px;
+}
+.btn:hover{
+  background-image: linear-gradient(115.11deg, #8d0dad 16.38%, #c02790 84.56%);
+}
+
+.input{
+  padding-left: 20px;
+  width: 400px;
+  height: 40px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+}
+.input::placeholder{
+  font-weight: 300;
+}
+.input:hover {
+  border: 1px solid rgb(145, 145, 145);
+}
+.input:focus {
+  border: 1px solid rgb(145, 145, 145);
+  box-shadow: 0 0 3px #1670BE;
+  outline-offset: 0px;
+  outline: none;
+}
+.form__text{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1000px) {
+}
+@media (max-width: 580px) {
+}

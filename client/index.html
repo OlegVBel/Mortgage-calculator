@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Banks</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/main.js" type="module"></script>
+</head>
+
+<body class="body" >
+	<header class="header">
+		<div class="container">
+			<h1 class="header__title">Working with banks list</h1>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="container">
+
+			<div class="main__add">
+				<button class="main__add-btn btn">Add bank</button>
+			</div>
+
+			<section class="card">
+					
+			</section>
+		</div>
+	</main>
+
+	<div id="add-modal" class="modal ">
+		<div class="modal__body">
+			<div class="modal__content">
+				<h3 class="modal__title">Adding a new bank to the list</h3>
+				<form id="add-form" action="http://localhost:3000/banks" method="POST" class="modal__form">
+					<input required type="file" accept="img/*" class="modal__form-file image">
+					<div class="modal__form-wrapper">
+						<div class="modal__form-item">
+							<p class="modal__form-text form__text">Bank's name</p>
+							<input required type="text" name="name" class="modal__input input alt-desc" placeholder="Enter bank's name">
+						</div>
+						<div class="modal__form-item">
+							<p class="modal__form-text form__text">Interest rate</p>
+							<input required type="number" min="0" max="100" name="rate" class="modal__input input rate" placeholder="Enter interes rate">
+						</div>
+						<div class="modal__form-item">
+							<p class="modal__form-text form__text">Maximum loan</p>
+							<input required type="number" min="1" name="loan" class="modal__input input loan" placeholder="Enter maximum loan">
+						</div>
+						<div class="modal__form-item">
+							<p class="modal__form-text form__text">Minimum down payment</p>
+							<input required type="number" min="1" name="payment" class="modal__input input payment" placeholder="Enter minimum down payment">
+						</div>
+						<div class="modal__form-item">
+							<p class="modal__form-text form__text">Loan term</p>
+							<input required type="number" min="1" name="term" class="modal__input input term" placeholder="Enter loan term">
+						</div>
+					</div>
+					<button type="submit" class="modal__btn btn">Add</button>
+				</form>
+				<div class="form__close-btn">
+					<div id="close-add" class="close-btn"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="edit-modal" class="modal ">
+		<div class="modal__body">
+			<div class="modal__content">
+				<h3 class="modal__title">Changing a new bank to the list</h3>
+				<form id="edit-form"  class="modal__form">
+					<input type="file" accept="img/*" class="modal__form-file image">
+					<div class="modal__form-wrapper">
+						<div class="modal__form-item">
+							<p class="modal__form-text form__text">Bank's name</p>
+							<input type="text" name="name" class="modal__input input alt-desc" placeholder="Enter bank's name">
+						</div>
+						<div class="modal__form-item">
+							<p class="modal__form-text form__text">Interest rate</p>
+							<input type="number" min="0" max="100" name="rate" class="modal__input input rate" placeholder="Enter interes rate">
+						</div>
+						<div class="modal__form-item">
+							<p class="modal__form-text form__text">Maximum loan</p>
+							<input type="number" min="1" name="loan" class="modal__input input loan" placeholder="Enter maximum loan">
+						</div>
+						<div class="modal__form-item">
+							<p class="modal__form-text form__text">Minimum down payment</p>
+							<input type="number" min="1" name="payment" class="modal__input input payment" placeholder="Enter minimum down payment">
+						</div>
+						<div class="modal__form-item">
+							<p class="modal__form-text form__text">Loan term</p>
+							<input type="number" min="1" name="term" class="modal__input input term" placeholder="Enter loan term">
+						</div>
+					</div>
+					<button type="submit" class="modal__btn btn">Change</button>
+				</form>
+				<div class="form__close-btn">
+					<div id="close-edit" class="close-btn"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="reference">
+		<div class="container">
+			<div class="reference__btn">
+				<a href="calc.html" class="reference__btn-link">Mortgage calculator</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

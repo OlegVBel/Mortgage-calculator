@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/calcPage.css">
+  <script src="js/calc.js" type="module"></script>
+  <title>Mortgage calculator</title>
+</head>
+<body>
+  <header class="header">
+		<div class="container">
+			<h1 class="header__title">Mortgage calculator</h1>
+		</div>
+	</header>
+  
+  <main class="main">
+    <div class="container">
+      <form action="#" class="form">
+        <div class="form__wrapper">
+          <div class="form__item form__item-pair">
+            <label class="form__text">Initial loan</label>
+            <input required type="number" id="loan" class="form__input input" placeholder="Enter initial loan">
+          </div>
+          <div class="form__item form__item-pair">
+            <label class="form__text">Down payment</label>
+            <input required type="number" id="payment" class="form__input input" placeholder="Enter down payment">
+          </div>
+        </div>
+        <select id="bankList" class="form__item form__select form__text">
+
+        </select>
+        <div class="form__item form__item-pair">
+          <button type="submit" id="btn-count" class="btn form__btn">Count</button>
+          <button type="reset" id="btn-reset" class="btn form__btn">Reset</button>
+        </div>
+        <div class="form__item">
+          <label class="form__text form__result">Monthly mortgage payment: <span class="result"></span></label>
+        </div>
+        <div class="form__item">
+          <label class="form__text success hidden">The bank is capable of giving a requested loan</label>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <div class="reference">
+		<div class="container">
+			<div class="reference__btn">
+				<a href="index.html" class="reference__btn-link">Bank list</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
